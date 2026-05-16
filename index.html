@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karl Gabriel Garcia — Full-Stack Developer</title>
+  <meta name="description" content="Senior Full-Stack Developer based in Cagayan de Oro, Philippines. 7+ years building production web apps. Open to contract and freelance work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            surface: '#0d1117',
+            card: '#161b22',
+            border: '#30363d',
+            accent: '#58a6ff',
+            'accent-dim': '#1f6feb',
+            muted: '#8b949e',
+            subtle: '#6e7681',
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease forwards',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { background-color: #0d1117; color: #e6edf3; }
+    .section-fade { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .section-fade.visible { opacity: 1; transform: translateY(0); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; background: #161b22; border: 1px solid #30363d; color: #e6edf3; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; }
+    .card:hover { border-color: #58a6ff44; }
+    a { transition: color 0.2s; }
+    ::selection { background: #58a6ff33; }
+    .dot-accent { width: 8px; height: 8px; border-radius: 50%; background: #3fb950; box-shadow: 0 0 8px #3fb950; display: inline-block; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-border" style="background: rgba(13,17,23,0.85);">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <span class="font-mono text-sm text-muted">karlg-03.github.io</span>
+      <div class="flex items-center gap-6 text-sm text-muted">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#contact" class="hover:text-white hidden sm:block">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6">
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center pt-14">
+      <div class="section-fade visible">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="dot-accent"></span>
+          <span class="text-sm text-muted font-mono">Open to contract &amp; freelance work</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-bold tracking-tight mb-4 leading-tight">
+          Karl Gabriel<br />
+          <span class="text-accent">Garcia</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-muted font-light mb-6">
+          Senior Full-Stack Developer
+        </p>
+        <p class="text-base text-muted max-w-xl leading-relaxed mb-10">
+          7+ years shipping production web applications. Based in Cagayan de Oro, Philippines.
+          Currently at <span class="text-white font-medium">meldCX</span> · available for contract work.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="mailto:garciakarl515@gmail.com"
+             class="px-5 py-2.5 rounded-lg bg-accent text-surface font-semibold text-sm hover:bg-blue-400 transition-colors">
+            Get in touch
+          </a>
+          <a href="https://www.linkedin.com/in/karlgabrielgarcia/" target="_blank"
+             class="px-5 py-2.5 rounded-lg border border-border text-sm font-medium text-muted hover:text-white hover:border-accent transition-colors">
+            LinkedIn ↗
+          </a>
+          <a href="https://github.com/KarlG-03" target="_blank"
+             class="px-5 py-2.5 rounded-lg border border-border text-sm font-medium text-muted hover:text-white hover:border-accent transition-colors">
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 section-fade">
+      <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-8">About</h2>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div>
+          <p class="text-muted leading-relaxed mb-4">
+            I'm a full-stack developer with a track record of building scalable web products — from content management platforms to real-time IoT-connected applications. My stack centers on <span class="text-white">React, Next.js, Node.js, and GraphQL</span>, backed by solid experience with relational and document databases.
+          </p>
+          <p class="text-muted leading-relaxed">
+            I integrate <span class="text-white">agentic and AI-assisted workflows</span> into my day-to-day development, which lets me move faster without cutting corners on code quality or architecture.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="card p-5">
+            <div class="text-3xl font-bold text-white mb-1">7+</div>
+            <div class="text-sm text-muted">Years of professional experience</div>
+          </div>
+          <div class="card p-5">
+            <div class="text-3xl font-bold text-white mb-1">2022</div>
+            <div class="text-sm text-muted">Started taking contract & freelance projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 section-fade">
+      <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-8">Skills</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="card p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Frontend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">React</span>
+            <span class="badge">Next.js</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Vue.js</span>
+            <span class="badge">AngularJS</span>
+            <span class="badge">Tailwind CSS</span>
+            <span class="badge">HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="card p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Backend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">Node.js</span>
+            <span class="badge">Express</span>
+            <span class="badge">GraphQL</span>
+            <span class="badge">REST APIs</span>
+            <span class="badge">PHP / Laravel</span>
+            <span class="badge">Java EE</span>
+          </div>
+        </div>
+
+        <div class="card p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Databases</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">MySQL</span>
+          </div>
+        </div>
+
+        <div class="card p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Tools & Platforms</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">Git</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Vercel</span>
+            <span class="badge">Electron</span>
+            <span class="badge">Adobe AEM</span>
+            <span class="badge">MQTT</span>
+          </div>
+        </div>
+
+        <div class="card p-5 sm:col-span-2 lg:col-span-2">
+          <h3 class="text-sm font-semibold text-white mb-4">Other</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge">Agentic / AI-assisted development</span>
+            <span class="badge">Unity (Game Dev)</span>
+            <span class="badge">Adobe Photoshop</span>
+            <span class="badge">Adobe Premiere Pro</span>
+            <span class="badge">Adobe After Effects</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 section-fade">
+      <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-8">Experience</h2>
+      <div class="relative">
+        <div class="absolute left-0 top-2 bottom-2 w-px bg-border ml-2"></div>
+        <div class="space-y-10 pl-10">
+
+          <div class="relative">
+            <div class="absolute -left-10 top-1.5 w-4 h-4 rounded-full border-2 border-accent bg-surface"></div>
+            <div class="flex flex-wrap items-center gap-3 mb-1">
+              <span class="font-semibold text-white">Full-Stack Developer</span>
+              <span class="badge text-xs">Current</span>
+            </div>
+            <div class="text-sm text-accent mb-2">
+              <a href="https://meldcx.com" target="_blank" class="hover:underline">meldCX</a>
+              <span class="text-muted"> · Mar 2022 – Present</span>
+            </div>
+            <p class="text-sm text-muted leading-relaxed">
+              Building AI and intelligent edge technology products for enterprise customer experiences. Working across the full stack — React frontends, Node/GraphQL APIs, and cloud-connected IoT integrations. meldCX is an Australian company operating in 5 countries.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-10 top-1.5 w-4 h-4 rounded-full border-2 border-border bg-surface"></div>
+            <div class="font-semibold text-white mb-1">Content Engineer</div>
+            <div class="text-sm text-accent mb-2">
+              <a href="https://engagis.com" target="_blank" class="hover:underline">Engagis</a>
+              <span class="text-muted"> · Dec 2018 – Feb 2022 · 3 yrs 2 mos</span>
+            </div>
+            <p class="text-sm text-muted leading-relaxed">
+              Engineered and maintained digital signage and content platform solutions for an Australian information services company. Worked with AEM (Adobe Experience Manager) and web technologies across multi-country deployments.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-10 top-1.5 w-4 h-4 rounded-full border-2 border-border bg-surface"></div>
+            <div class="font-semibold text-white mb-1">Content Editor</div>
+            <div class="text-sm text-accent mb-2">
+              4LOOP Creative Agency
+              <span class="text-muted"> · Jul 2018 – Nov 2018</span>
+            </div>
+            <p class="text-sm text-muted leading-relaxed">
+              Content creation and web development for a local digital agency focused on marketing and online presence.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Recommendation -->
+    <section class="py-20 section-fade">
+      <div class="grid sm:grid-cols-2 gap-8">
+
+        <div>
+          <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-6">Education</h2>
+          <div class="card p-5">
+            <div class="font-semibold text-white mb-1">BS Information Technology</div>
+            <div class="text-sm text-muted mb-1">Cagayan de Oro College (PHINMA)</div>
+            <div class="text-sm text-subtle font-mono">2013 – 2017</div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-6">Recommendation</h2>
+          <div class="card p-5">
+            <blockquote class="text-sm text-muted leading-relaxed italic mb-4">
+              "Karl is a fantastic team player who always goes above and beyond. He has a good eye for detail and a positive attitude to everything that's involved."
+            </blockquote>
+            <div class="text-sm font-medium text-white">Max Taverna</div>
+            <div class="text-xs text-subtle">via LinkedIn</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 section-fade">
+      <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-8">Contact</h2>
+      <div class="card p-8 text-center max-w-lg mx-auto">
+        <div class="flex items-center justify-center gap-2 mb-3">
+          <span class="dot-accent"></span>
+          <span class="text-sm text-muted">Available for contracts &amp; freelance</span>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Let's work together</h3>
+        <p class="text-muted text-sm leading-relaxed mb-6">
+          Have a project in mind? Whether it's a greenfield build, an ongoing contract, or a specific feature — I'd love to hear about it.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="mailto:garciakarl515@gmail.com"
+             class="px-6 py-2.5 rounded-lg bg-accent text-surface font-semibold text-sm hover:bg-blue-400 transition-colors">
+            garciakarl515@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/karlgabrielgarcia/" target="_blank"
+             class="px-6 py-2.5 rounded-lg border border-border text-sm font-medium text-muted hover:text-white hover:border-accent transition-colors">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border mt-10">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-subtle">
+      <span>Karl Gabriel E. Garcia · Cagayan de Oro, Philippines</span>
+      <a href="https://github.com/KarlG-03" target="_blank" class="hover:text-muted transition-colors">github.com/KarlG-03</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
